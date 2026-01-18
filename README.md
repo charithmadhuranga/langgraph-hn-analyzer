@@ -42,7 +42,7 @@ Final Summary
 - **Python 3.10+**
 - **LangGraph**
 - **LangChain**
-- **OpenAI-compatible LLM**
+- **Gemini LLM**
 - **BeautifulSoup4**
 - **Requests**
 
@@ -68,7 +68,7 @@ source .venv/bin/activate  # macOS/Linux
 ### 3️⃣ Install dependencies
 
 ```bash
-pip install langgraph langchain langchain-openai requests beautifulsoup4
+uv sync
 ```
 
 ---
@@ -78,13 +78,20 @@ pip install langgraph langchain langchain-openai requests beautifulsoup4
 Set your LLM API key:
 
 ```bash
-export OPENAI_API_KEY="your-api-key"
+export GOOGLE_API_KEY="your-api-key"
 ```
 
 (Windows PowerShell)
 
 ```powershell
-setx OPENAI_API_KEY "your-api-key"
+setx GOOGLE_API_KEY "your-api-key"
+```
+
+or 
+
+```bash
+touch .env
+GOOGLE_API_KEY="your-api-key" > .env
 ```
 
 ---
