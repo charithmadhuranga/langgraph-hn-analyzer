@@ -1,4 +1,4 @@
-```markdown
+
 # 📰 Hacker News Topic Analyzer (LangGraph)
 
 A simple **LangGraph-powered AI pipeline** that scrapes **Hacker News**, filters articles by a given topic, analyzes trends using an LLM, and produces a concise news summary.
